@@ -7,10 +7,10 @@ console.log('icona');
 const closeMenuIcon = document.querySelector('.fa-times');
 
 menuIcon.addEventListener('click', function() {
-    hamburger.style.display = "block";
+    hamburger.classList.add('active');
     console.log('click');
 })
 
 closeMenuIcon.addEventListener('click', function() {
-    hamburger.style.display = 'none';
+    hamburger.classList.remove('active');
 })
